@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DOPE | Portfolio</title>
+
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <link rel="stylesheet" href="./src/output.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+  <style>
+    .custom-active {
+      background-color: #0ea5e9;
+      /* sky-500 */
+      color: white;
+    }
+  </style>
+</head>
+
+<body class="bg-white font-poppins dark:bg-slate-900">
+  <!-- Header -->
+  <header
+    class="flex justify-center sticky top-0 z-50 filter backdrop-blur-md backdrop-filter bg-white dark:bg-slate-900 px-4 md:px-16">
+    <nav class="container flex items-center justify-between py-4 text-white">
+      <!-- logo -->
+      <a href="#" id="brand-logo" class="flex items-center justify-start h-7 w-fit overflow-hidden">
+        <svg width="52" height="44" viewBox="0 0 53 44" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7">
+          <path
+            d="M23.2997 0L52.0461 28.6301V44H38.6311V34.1553L17.7522 13.3607L13.415 13.3607L13.415 44H0L0 0L23.2997 0ZM38.6311 15.2694V0L52.0461 0V15.2694L38.6311 15.2694Z"
+            class="dark:fill-white" fill="#1E293B"></path>
+        </svg>
+        <p class="inline text-xl font-bold h-fit ms-2 text-slate-800  dark:text-white">n-code</p>
+      </a>
+
+      <div class="relative hidden items-center md:flex">
+        <nav class="flex items-center text-sm font-semibold">
+          <ul class="flex space-x-8 text-slate-800 dark:text-white">
+            <li><a class="hover:text-sky-500" href="#skills">Skills</a></li>
+            <li>
+              <a class="hover:text-sky-500" href="projects.html">Projects</a>
+            </li>
+            <li><a class="hover:text-sky-500" href="#about">About</a></li>
+            <li><a class="hover:text-sky-500" href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div
+        class="grid grid-cols-2 items-center space-x-2 rounded-[500px] bg-slate-200 p-1 dark:bg-slate-800 md:grid-cols-1"
+        title="Click to Change Mode">
+        <a href="#" id="darkModeToggle"
+          class="grid h-8 w-8 place-items-center rounded-full bg-slate-800 dark:bg-white">👦</a>
+
+        <!-- menu-icon -->
+        <svg id="menuIcon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+          class="flex h-8 w-8 cursor-pointer place-items-center rounded-full bg-slate-300 p-1 md:hidden">
+          <path d="M5.0769 8.53845H18.9231" stroke="#1E293B" stroke-width="2.81243" stroke-linecap="round" class="" />
+          <path d="M5.0769 15.4615H13.7308" stroke="#1E293B" stroke-width="2.81243" stroke-linecap="round" class="" />
+        </svg>
+      </div>
+      <!-- menu-icon-end -->
+    </nav>
+  </header>
+
+  <!-- Sidebar for Mobile View -->
+  <div id="sidebar"
+    class="fixed left-0 top-0 z-10 h-full w-64 overflow-y-scroll -translate-x-full transform bg-white transition-transform duration-300 ease-in-out dark:bg-slate-900 dark:text-white md:hidden">
+    <nav class="mt-16 flex flex-col items-start space-y-4 p-6 text-sm font-semibold">
+      <a class="custom-active w-full rounded p-2 dark:text-white" href="#">Home</a>
+      <a class="w-full rounded p-2 dark:text-white" href="#skills">Skills</a>
+      <a class="w-full rounded p-2 dark:text-white" href="#">Projects</a>
+      <a class="w-full rounded p-2 dark:text-white" href="#about">About</a>
+      <a class="w-full rounded p-2 dark:text-white" href="#">Contact
+        Us</a>
+    </nav>
+  </div>
+
+  <!-- Hero section -->
+  <section class="flex justify-center bg-white dark:bg-slate-900 px-4 md:px-16" id="hero">
+    <div id="hero-content"
+      class="container grid h-fit w-full grid-cols-1 place-items-center py-24 text-white md:grid-cols-2">
+      <div class="float-start grid text-center md:text-start">
+        <p class="text-xl text-slate-800 dark:text-white">Hi there</p>
+        <h1 class="text-4xl font-extrabold text-sky-500 sm:text-6xl">
+          I'm Mukesh
+        </h1>
+        <i class="center flex h-8 justify-center md:h-full">
+          <img src="../assets/images/webp/stroke-line-draw.svg" alt="" class="md:pe-52" />
+        </i>
+        <p class="text-xl font-semibold text-slate-800 dark:text-white">
+          Front-end Developer
+        </p>
+        <p class="my-4 text-sm text-slate-600 dark:text-slate-400">
+          I'm an aspiring front-end developer with a strong passion for
+          creating beautiful and functional websites. I am skilled in HTML,
+          CSS, and JavaScript, and I am constantly learning.
+        </p>
+
+        <!-- hero buttons -->
+        <div id="btn-box" class="flex justify-center md:justify-start items-center space-x-4 py-4">
+
+          <a href="#"
+            class="rounded-md bg-sky-500 px-4 py-2 h-fit text-sm shadow-sm hover:bg-sky-400 dark:shadow-lg dark:hover:shadow-sky-800">Hire
+            Me</a>
+
+          <div class="flex items-center">
+            <a id="download-link" href="../assets/resume/mukeshyadav-frontend-dev-resume-bl.pdf" download
+              class="rounded-l-md bg-slate-800 ps-4 pe-2 py-2 space-x-2 h-fit w-fit text-sm shadow-sm hover:bg-sky-400 dark:shadow-lg dark:hover:shadow-sky-800">Download
+              Resume</a>
+            <button id="dropdown-button" class="relative group">
+              <img src="../assets/icons/arrow-down.svg"
+                class="rounded-r-md bg-slate-800 px-2 py-2 border-s-2 border-slate-400 space-x-2 h-9 w-fit text-sm shadow-sm hover:bg-sky-400 dark:shadow-lg dark:hover:shadow-sky-800">
+
+              <div id="resume-colors"
+                class="absolute hidden group-hover:block group-focus:block right-0 top-[38px] bg-slate-800 text-white rounded-md p-1 shadow-md space-y-1">
+                <p id="blue-option" class="hover:bg-slate-700/50 active:bg-sky-500 rounded-md py-1 px-4">Blue</p>
+                <p id="bw-option" title="Black & White"
+                  class="hover:bg-slate-700/50 active:bg-sky-500 rounded-md py-1 px-4">B&W</p>
+              </div>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div id="img-box" class="float-end mt-16 md:mt-0">
+        <img src="../assets/images/mukesh-yadav-pr-pic.webp" class="max-h-64 rounded-full border-8 border-sky-500" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills  -->
+  <!-- <section id="skills" class="bg-white dark:bg-slate-900">
+    <div class="flex h-96 flex-col items-center px-4 py-4 text-white md:px-16">
+      <div id="skill-head" class="grid place-items-center">
+        <h2 class="text-3xl font-extrabold text-slate-800 dark:text-white sm:text-4xl">
+          What skills do I have?
+        </h2>
+        <i class="my-2 flex h-1 w-20 flex-1 bg-sky-500"></i>
+      </div>
+
+      <div id="skill-cards" class="py-4">
+        <div id="card"
+          class="relative flex h-24 w-72 rounded-2xl border border-slate-200 bg-white p-2 shadow-lg hover:cursor-pointer hover:border-sky-500 dark:border-slate-600 dark:bg-blue-50/10 dark:hover:border-sky-500 dark:hover:bg-blue-50/20">
+          <div id="left-content" class="flex min-w-20 items-center justify-center rounded p-1">
+            <img src="../assets/images/svg-img/html.svg" alt="" class="h-4/5 drop-shadow-sky filter" />
+          </div>
+          <div id="right-content" class="flex flex-col justify-center rounded p-2">
+            <p class="font-bold text-slate-800 dark:text-white">HTML</p>
+            <p class="text-[10px] text-slate-800 dark:text-white">
+              I have learned HTML and practiced it many times on small
+              projects.
+            </p>
+          </div>
+          <div class="absolute -bottom-3 right-8 text-white">
+            <a href="#" class="rounded bg-slate-800 px-3 py-1 text-sm shadow-md">Let's Go</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- New Skills  -->
+  <section class="flex justify-center bg-white dark:bg-slate-900 px-4 md:px-16" id="skills">
+    <div class="container py-12">
+      <div id="skill-head" class="grid place-items-center py-4">
+        <h2 class="font-poppins text-3xl font-bold text-slate-800 dark:text-white sm:text-4xl">
+          Technologies I Know
+        </h2>
+        <i class="my-2 flex h-1 w-20 flex-1 bg-sky-500"></i>
+      </div>
+
+      <div id="skills-wrapper"
+        class="grid w-full select-none grid-cols-2 place-items-center gap-4 py-12 md:grid-cols-3 lg:grid-cols-5">
+        <div id="html"
+          class="grid h-44 w-36 rounded-xl border border-slate-200 bg-white py-8 hover:border-sky-500 hover:shadow-lg dark:border-slate-600 dark:bg-blue-50/10 dark:hover:border-sky-500 dark:hover:bg-blue-50/20">
+          <div id="img-box" class="mb-5 grid h-16 w-full place-items-center overflow-hidden">
+            <img src="../assets/images/svg-img/html5-logo.svg" alt="html-img" class="h-12" />
+          </div>
+          <div id="text-box" class="w-full text-center text-slate-800 dark:text-white">
+            <p>HTML 5</p>
+          </div>
+        </div>
+
+        <div id="css"
+          class="grid h-44 w-36 rounded-xl border border-slate-200 bg-white py-8 hover:border-sky-500 hover:shadow-lg dark:border-slate-600 dark:bg-blue-50/10 dark:hover:border-sky-500 dark:hover:bg-blue-50/20">
+          <div id="img-box" class="mb-5 grid h-16 w-full place-items-center overflow-hidden">
+            <img src="../assets/images/svg-img/css-logo.svg" alt="css-img" class="h-12" />
+          </div>
+          <div id="text-box" class="w-full text-center text-slate-800 dark:text-white">
+            <p>CSS</p>
+          </div>
+        </div>
+
+        <div id="javascript"
+          class="grid h-44 w-36 rounded-xl border border-slate-200 bg-white py-8 hover:border-sky-500 hover:shadow-lg dark:border-slate-600 dark:bg-blue-50/10 dark:hover:border-sky-500 dark:hover:bg-blue-50/20">
+          <div id="img-box" class="mb-5 grid h-16 w-full place-items-center overflow-hidden">
+            <img src="../assets/images/svg-img/js-logo.svg" alt="js-img" class="h-12" />
+          </div>
+          <div id="text-box" class="w-full text-center text-slate-800 dark:text-white">
+            <p>Java Script</p>
+          </div>
+        </div>
+
+        <div id="tailwindcss"
+          class="grid h-44 w-36 rounded-xl border border-slate-200 bg-white py-8 hover:border-sky-500 hover:shadow-lg dark:border-slate-600 dark:bg-blue-50/10 dark:hover:border-sky-500 dark:hover:bg-blue-50/20">
+          <div id="img-box" class="mb-5 grid h-16 w-full place-items-center overflow-hidden">
+            <img src="../assets/images/svg-img/tailwind-logo.svg" alt="tailwindcss-img" class="h-16" />
+          </div>
+          <div id="text-box" class="w-full text-center text-slate-800 dark:text-white">
+            <p>Tailwindcss</p>
+          </div>
+        </div>
+
+        <div id="php"
+          class="grid h-44 w-36 rounded-xl border border-slate-200 bg-white py-8 hover:border-sky-500 hover:shadow-lg dark:border-slate-600 dark:bg-blue-50/10 dark:hover:border-sky-500 dark:hover:bg-blue-50/20">
+          <div id="img-box" class="mb-5 grid h-16 w-full place-items-center overflow-hidden">
+            <img src="../assets/images/svg-img/php-logo.svg" alt="php-img" class="h-16" />
+          </div>
+          <div id="text-box" class="w-full text-center text-slate-800 dark:text-white">
+            <p>PHP</p>
+          </div>
+        </div>
+
+        <div id="python"
+          class="grid h-44 w-36 rounded-xl border border-slate-200 bg-white py-8 hover:border-sky-500 hover:shadow-lg dark:border-slate-600 dark:bg-blue-50/10 dark:hover:border-sky-500 dark:hover:bg-blue-50/20">
+          <div id="img-box" class="mb-5 grid h-16 w-full place-items-center overflow-hidden">
+            <img src="../assets/images/svg-img/python-logo.svg" alt="python-img" class="h-12" />
+          </div>
+          <div id="text-box" class="w-full text-center text-slate-800 dark:text-white">
+            <p>Python</p>
+          </div>
+        </div>
+
+        <div id="angular"
+          class="grid h-44 w-36 rounded-xl border border-slate-200 bg-white py-8 hover:border-sky-500 hover:shadow-lg dark:border-slate-600 dark:bg-blue-50/10 dark:hover:border-sky-500 dark:hover:bg-blue-50/20">
+          <div id="img-box" class="mb-5 grid h-16 w-full place-items-center overflow-hidden">
+            <img src="../assets/images/svg-img/angular-logo.svg" alt="angular-img" class="h-12" />
+          </div>
+          <div id="text-box" class="w-full text-center text-slate-800 dark:text-white">
+            <p>Angular</p>
+          </div>
+        </div>
+
+        <div id="react"
+          class="grid h-44 w-36 rounded-xl border border-slate-200 bg-white py-8 hover:border-sky-500 hover:shadow-lg dark:border-slate-600 dark:bg-blue-50/10 dark:hover:border-sky-500 dark:hover:bg-blue-50/20">
+          <div id="img-box" class="mb-5 grid h-16 w-full place-items-center overflow-hidden">
+            <img src="../assets/images/svg-img/react-logo.svg" alt="html-img" class="h-12" />
+          </div>
+          <div id="text-box" class="w-full text-center text-slate-800 dark:text-white">
+            <p>React</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About section -->
+  <section class="flex justify-center bg-white dark:bg-slate-900 px-4 md:px-16" id="about">
+    <div class="container py-12">
+      <div id="about-contents"
+        class="grid h-fit rounded-xl bg-gradient-to-tl from-blue-700 to-sky-500 p-4 sm:grid-cols-2">
+        <div class="md:text-start text-center">
+          <h2 class="w-full mb-4 font-poppins text-3xl font-bold text-white dark:text-white sm:text-4xl">
+            About me
+          </h2>
+          <p class="text-sm text-white md:text-start">
+            A motivated and self-taught Frontend Developer currently pursuing
+            a Bachelor of Computer Applications (BCA). Proficient in HTML,
+            CSS, JavaScript, and Tailwind CSS with hands-on experience in
+            building web applications and personal projects. Seeking an
+            opportunity to apply my skills and grow in a professional
+            environment.
+          </p>
+          <div class="grid w-full place-items-center mt-4 md:place-items-start">
+            <a href="../assets/resume/mukeshyadav-frontend-dev-resume-bl.pdf" target="_blank"
+              class="cursor-pointer select-none rounded-md bg-slate-800 px-6 py-2 text-white hover:bg-slate-900">View
+              Resume</a>
+          </div>
+        </div>
+
+        <div class="grid place-items-center mt-4 md:mt-0">
+          <img src="../assets/images/mukesh-yadav-pr-pic.webp" alt=""
+            class="h-56 rounded-full border-4 border-sky-500 shadow-xl" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer section  -->
+  <section class="flex justify-center bg-white dark:bg-slate-950 px-4 md:px-16" id="footer">
+    <div class="container grid h-fit grid-cols-2 place-contents-center py-12 md:grid-cols-4">
+      <div id="footer-logo" class="grid h-full">
+        <!-- logo -->
+        <a href="#" id="brand-logo" class="flex items-center justify-start h-7 w-fit overflow-hidden">
+          <svg width="52" height="44" viewBox="0 0 53 44" fill="none" xmlns="http://www.w3.org/2000/svg"
+            class="h-7 w-7">
+            <path
+              d="M23.2997 0L52.0461 28.6301V44H38.6311V34.1553L17.7522 13.3607L13.415 13.3607L13.415 44H0L0 0L23.2997 0ZM38.6311 15.2694V0L52.0461 0V15.2694L38.6311 15.2694Z"
+              class="dark:fill-white" fill="#1E293B"></path>
+          </svg>
+          <p class="inline text-xl font-bold h-fit ms-2 text-slate-800  dark:text-white">n-code</p>
+        </a>
+
+        <p class="text-sm text-slate-800 dark:text-white">
+          Copyright © 2024 n-code.
+        </p>
+      </div>
+
+      <div id="footer-links" class="select-none ">
+        <p class="font-semibold text-slate-800 dark:text-white">Company</p>
+        <div class="links mt-4 flex flex-col text-slate-800 dark:text-white">
+          <a class="rounded-sm px-2 py-1 hover:text-sky-500">Home</a>
+          <a class="rounded-sm px-2 py-1 hover:text-sky-500">About</a>
+          <a class="rounded-sm px-2 py-1 hover:text-sky-500">Skills</a>
+        </div>
+      </div>
+
+      <div id="contact" class="col-span-2 flex h-full flex-col w-full flex-1 mt-4 md:mt-0 sm:justify-start">
+        <h2 class="font-semibold text-slate-800 dark:text-white">
+          Contact Us
+        </h2>
+        <div class="mt-2">
+          <form action="" class="">
+            <div class="email-input-box flex overflow-hidden space-x-1">
+              <input type="email" name="email" id="email" placeholder="n-code@gmail.com"
+                class="rounded-md border max-w-52 border-slate-200 bg-transparent px-2 py-1 text-slate-800 outline-none hover:border-sky-500 focus:border-sky-500 dark:border-slate-600 dark:bg-blue-50/10 dark:text-slate-100 dark:hover:border-sky-500 dark:focus:border-sky-500" />
+              <button type="submit"
+                class="cursor-pointer select-none rounded-md bg-sky-500 px-6 py-1 text-white hover:bg-sky-600">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ------------------- -->
+  <script src="../src/script.js"></script>
+  <!-- -------------------- -->
+</body>
+
+</html>

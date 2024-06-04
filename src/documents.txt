@@ -1,0 +1,5 @@
+dark color for texts :- |color: #30303c;|
+blue color for texts :- |color: #5999ff;|
+
+blue gradient for bg and texts :- |linear-gradient(90deg, #5999ff 0%, #0033ff 100%);|
+blue gradient for bg and texts :- |linear-gradient(117deg, #21D4FD 0%, #2906eb 100%);|
