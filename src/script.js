@@ -40,9 +40,9 @@ links.forEach((link) => {
 // -----------------------------------------
 // Function to update the download link
 document.getElementById('blue-option').addEventListener('click', function () {
-  document.getElementById('download-link').setAttribute('href', '../assets/resume/mukeshyadav-frontend-dev-resume-bl.pdf');
+  document.getElementById('download-link').setAttribute('href', '.assets/resume/mukeshyadav-frontend-dev-resume-bl.pdf');
 });
 
 document.getElementById('bw-option').addEventListener('click', function () {
-  document.getElementById('download-link').setAttribute('href', '../assets/resume/mukeshyadav-frontend-dev-resume-bw.pdf');
+  document.getElementById('download-link').setAttribute('href', '.assets/resume/mukeshyadav-frontend-dev-resume-bw.pdf');
 });
