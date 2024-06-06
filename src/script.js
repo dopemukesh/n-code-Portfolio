@@ -1,13 +1,27 @@
 
 
-// -----------------------------------------
-// apearance mode toggler
-document
-  .getElementById("darkModeToggle")
-  .addEventListener("click", function (e) {
-    e.preventDefault();
-    document.body.classList.toggle("dark");
-  });
+// Appearance mode toggler
+document.getElementById("darkModeToggle").addEventListener("click", function (e) {
+  e.preventDefault();
+  document.documentElement.classList.toggle("dark");
+  // Save user preference to localStorage
+  localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+});
+
+// Check user preference on page load and apply theme accordingly
+(function() {
+  // Check if user preference is saved in localStorage
+  const userTheme = localStorage.getItem('theme');
+  // Check if user preference is dark, or if no preference is saved, use OS preference
+  const darkModeEnabled = userTheme === 'dark' || (userTheme === null && window.matchMedia('(prefers-color-scheme: dark)').matches);
+  // Apply dark mode if enabled
+  if (darkModeEnabled) {
+    document.documentElement.classList.add('dark');
+  } else {
+    document.documentElement.classList.remove('dark');
+  }
+})();
+
 
 // JavaScript to toggle the sidebar
 document.getElementById("menuIcon").addEventListener("click", function () {

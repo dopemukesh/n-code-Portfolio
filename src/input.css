@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components {
+    .card {
+        @apply bg-gradient-to-b from-white to-yellow-50;
+    }
+  }
