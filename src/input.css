@@ -3,6 +3,14 @@
 @tailwind utilities;
 
 
+
+@layer base {
+    html {
+        font-family: "Poppins", system-ui, sans-serif;
+    }
+}
+
+
 @layer components {
     .card {
         @apply bg-gradient-to-b from-white to-yellow-50;
