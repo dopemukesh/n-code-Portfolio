@@ -1302,8 +1302,8 @@ html {
   background-image: url('/assets/images/svg-img/nav-bg.svg');
 }
 
-.bg-\[url\(\'\/assets\/images\/svg-img\/top-grid\.svg\'\)\] {
-  background-image: url('/assets/images/svg-img/top-grid.svg');
+.bg-\[url\(\'\/assets\/images\/webp\/top-grid\.webp\'\)\] {
+  background-image: url('/assets/images/webp/top-grid.webp');
 }
 
 .bg-gradient-to-l {
@@ -1316,6 +1316,14 @@ html {
 
 .bg-gradient-to-tl {
   background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+}
+
+.bg-\[url\(\'\/assets\/images\/webp\/nav-bg\.svg\'\)\] {
+  background-image: url('/assets/images/webp/nav-bg.svg');
+}
+
+.bg-\[url\(\'\/assets\/images\/webp\/nav-bg\.webp\'\)\] {
+  background-image: url('/assets/images/webp/nav-bg.webp');
 }
 
 .from-blue-700 {
