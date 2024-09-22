@@ -10,6 +10,8 @@ module.exports = {
       colors: {
         "custom-blue": "#0057FF",
         "custom-blue2": "#5999ff",
+        'dopeDark': '#0D0D15',
+        'dopeDark-light': '#10131A',
       },
       dropShadow: {
         sky: "0 4px 8px rgba(0, 87, 255, 0.5)", // Custom drop shadow
