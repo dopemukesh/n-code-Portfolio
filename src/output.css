@@ -689,10 +689,6 @@ html {
   top: 18rem;
 }
 
-.top-\[42px\] {
-  top: 42px;
-}
-
 .top-\[44px\] {
   top: 44px;
 }
@@ -740,6 +736,10 @@ html {
   margin-bottom: 1.25rem;
 }
 
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
 .ml-2 {
   margin-left: 0.5rem;
 }
@@ -766,10 +766,6 @@ html {
 
 .mt-6 {
   margin-top: 1.5rem;
-}
-
-.mb-8 {
-  margin-bottom: 2rem;
 }
 
 .box-border {
@@ -918,10 +914,6 @@ html {
   width: 100vw;
 }
 
-.w-5 {
-  width: 1.25rem;
-}
-
 .min-w-11 {
   min-width: 2.75rem;
 }
@@ -968,6 +960,10 @@ html {
   cursor: pointer;
 }
 
+.cursor-default {
+  cursor: default;
+}
+
 .select-none {
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -984,10 +980,6 @@ html {
 
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -1219,6 +1211,11 @@ html {
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
 }
 
+.bg-red-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
+}
+
 .bg-red-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(239 68 68 / var(--tw-bg-opacity));
@@ -1251,11 +1248,6 @@ html {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-sky-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(14 165 233 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\.\.\/\.\.\/assets\/images\/webp\/nav-bg\.webp\'\)\] {
@@ -1678,6 +1670,11 @@ html {
   border-color: rgb(51 65 85 / var(--tw-border-opacity));
 }
 
+.dark\:border-slate-800:is(.dark *) {
+  --tw-border-opacity: 1;
+  border-color: rgb(30 41 59 / var(--tw-border-opacity));
+}
+
 .dark\:bg-blue-50\/10:is(.dark *) {
   background-color: rgb(239 246 255 / 0.1);
 }
@@ -1711,26 +1708,13 @@ html {
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
 }
 
-.dark\:bg-slate-950:is(.dark *) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(2 6 23 / var(--tw-bg-opacity));
-}
-
 .dark\:bg-white:is(.dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.dark\:bg-slate-700\/20:is(.dark *) {
-  background-color: rgb(51 65 85 / 0.2);
-}
-
-.dark\:bg-slate-700\/5:is(.dark *) {
-  background-color: rgb(51 65 85 / 0.05);
-}
-
-.dark\:bg-slate-700\/50:is(.dark *) {
-  background-color: rgb(51 65 85 / 0.5);
+.dark\:bg-transparent:is(.dark *) {
+  background-color: transparent;
 }
 
 .dark\:fill-white:is(.dark *) {
